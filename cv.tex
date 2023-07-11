@@ -36,7 +36,11 @@
 % \name{Guy Incognito}
 % \address{123 Fake St. \linebreak Seattle, WA}
 % \contacts{(555) 123-4567 \linebreak \href{mailto:guy@incognito.com}{guy@incognito.com} \linebreak \href{https://www.incognito.com/}{incognito.com}}
-\input{personal.tex}
+\ifdefined\issample
+	\input{personal.tex.sample}
+	\else
+	\input{personal.tex}
+\fi
 
 \begin{document}
 
